@@ -1,0 +1,29 @@
+operator precedence
+
+**		the exponent operator is given priority over all the others used in the expression
+
+~ + -		the negation,unary plus and minus
+
+* / // %	multiplication,divide, remainder, modulus,floor division
+
++ -		binary plus and mminus
+
+>> <<		left shift, right shift
+
+&		binary and
+
+^ | 		binary xor,or
+
+<= <> >=	comparision operator(less than,less than equal to,greater than,greater than equal to)
+
+<> == !=	equality operators
+
+= %= /=
+//= -= += 
+*= **=		assignment operator
+
+is, is not	identity operator
+
+in, not in	membership operator
+
+not or and	logical operators	

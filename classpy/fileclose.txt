@@ -1,0 +1,8 @@
+The close() method:
+
+* The close() method is used to close the file object.
+* Once the file object is closed, you cannot further read from or write into the file associated     with the file object.
+* Python automatically closes a file when the refernce object of a file is reassigned to another     file.
+* The syntax of close is: fileObj.close()
+* The close() method frees up any system resources such as a file descriptors, file locks etc that   are associated with the file.
+* Once the file is closed using the close() method, any attempt to use the file object will      result in an error.

@@ -1,0 +1,8 @@
+python keywords are special reserved words which convey a special meaning to the compiler/interpreter. each keyword has a special meaning and a specific operation.
+These keywords cant be used as variables. Following is the list of python keywords:
+true		false		none		and		as
+asset		def		class		continue	break
+else		finally		elif		del		except
+global		for		if		from		import
+raise		try		or		return		pass
+nonlocal	ins		not		is		lambda

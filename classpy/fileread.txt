@@ -1,0 +1,12 @@
+Reading from a file:
+
+There are three ways to read data from a text file:
+
+1-read(): returns the read bytes in the form of a string. Reads n bytes, if n not specified, reads   entire file.
+                     File_object.read([n])
+2-readline(): reads a line of the file and returns n the form of a string.
+* For specified n,reads at most n bytes.
+* Does not read more than one line,even if n exceeds the length of the line.
+                     File_object.readline(n)
+3-readlines(): reads all the lines and returns each line as a string element in a list.
+                     File_object.readlines()

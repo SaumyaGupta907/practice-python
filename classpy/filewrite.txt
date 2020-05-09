@@ -1,0 +1,8 @@
+writing to a file:
+
+There are 2 ways to write into a file:
+1- write(): inserts the string str1 in a single line in the text file.
+                       File_object.write(str)
+2- writelines(): for a list of a string elements, each string is inserted in the file.
+                       File_object.writelines(L)     where L=[str1,str2,str3]
+NOTE: The functions write() and writelines() are also used to write into a file in append "a" mode.  

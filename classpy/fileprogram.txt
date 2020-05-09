@@ -1,0 +1,12 @@
+Program on file (1):
+#myfile.txt is an existing file
+
+file1=open("myfile.txt","a")
+file1.write("Today\n")
+file1.close()
+file1=open("myfile.txt","r")
+print("File content after appending")
+print(file1.readlines())
+print()         #cursor moves to next line
+file1.close()
+

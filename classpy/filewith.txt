@@ -1,0 +1,23 @@
+Opening files using "with" keyword:
+#with is another way to open a file
+
+syntax: 
+with open("filename","access_mode") as filepointer:
+	for var in filepointer:
+		print(var)
+
+example:
+with open("myfile.txt","r") as f:
+	for line in f:
+		print(line)
+f.close()
+
+Program:
+f=open("myfile.txt","r")
+print("position of the file pointer before reading is",f.tell())
+print(f.read(10))
+print("position of the file pointer after reading is",f.tell())
+f.seek(0,1)
+print(f.read(20))
+print("position of the file pointer after reading is",f.tell())
+f.close()

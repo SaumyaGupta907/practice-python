@@ -1,0 +1,27 @@
+				Renaming and deleting a file:
+*The os module in python has various methods that can be used to perform file-processing operations like renaming and deleting file.
+*The rename() method takes two arguments, the current filename and new filename.
+ 
+Syntax: os.rename(old_file_name,new_file_name)
+where 'old_file_name' is the current name of the file and 'new_file_name' is the new name of the file.
+ 
+*the remove() method can be used to delete file(s).
+
+Syntax: os.remove(file_name)
+where 'file_name' is name of the file to be deleted.
+
+				DIRECTORY METHODS:
+
+*the mkdir() method of the os module is used to create directories in the current directory.
+                       os.mkdir("new_dir_name")
+*the getcwd() method is used to display the current working directory(cwd).
+                       os.getcwd()
+*the chdir() method is used to change the current directory
+                       os.chdir("dir_name")
+*the rmdir() method is used to remove or delete a directory.
+ Before removing a directory, it should be absolutely empty and all contents in it should be removed.
+                       os.rmdir("dir_name")
+
+				LISTING FILES OF A DIRECTORY:
+
+the os.walk() method generates the file names in a directory tree by walking the tree either top-down or bottom-up.

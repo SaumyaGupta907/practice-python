@@ -1,0 +1,47 @@
+FILE METHODS:
+
+METHOD  			DESCRIPTION
+
+fileno()			Return an integer number(file descriptor)of the file.
+
+flush()				Flush the write buffer of the file stream.[buffer=temporary storage area]
+
+isatty()			Return True if the file stream is interactive.
+[tty=text telephony]
+seek(offset,from=SEEK_SET)	Change the file position to offset bytes,in reference to from(start,current,end).
+
+seekable()			Returns True if the file stream supports random access.
+
+tell() 				Returns the current file location.
+
+truncate(size=None)		Resize the file stream to size bytes. If size is not specifies,resize to current location.
+
+writable()			Returns True if the file stream  can be  written to.
+
+[stream=data flow through mechanical devices]
+
+
+FILE POSITIONS:
+*With every file, the file management system associates a pointer known as FILE POINTER,which is used to navigate across the file for reading and/or writing data.
+*The file pointer specifies a location from where the current read or write operation is initiated.
+*Once the read/write operation is completed, the pointer is automatically updated.
+*the tell() method tell the current position within the file at which the next read or write operation will occur.
+*fileObject.seek(offset[,from]) method is used to set the position of the file pointer,
+*where,
+	offset=this is position of the read/write pointer within the file.
+	from=this is optional and defaults to 0 which means beginning of the file,
+		1 means seek relative to the current position 
+		and 2 means seek reative to the file's end.  
+
+
+			PROGRAM
+
+import os
+location='D:/pyhton/files'
+files_in_dir=[]
+#r=root,d=directories,f=files
+for r,d,f in os.walk(location):
+	for item in f:
+		files_in_dir.append(os.path.join(r,item))
+for item in files_in_dir:
+	print("file in dir:s",item)

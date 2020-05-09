@@ -1,0 +1,40 @@
+PYTHON MAGIC METHODS OR SPECIAL FUNCTIONS
+
+Binary Operators                                 Magic Method or Special Functions
+
+ -                                               object.__sub__(self,other)    #double underscore
+ +						 object.__add__(self,other)
+ *                                               object.__mul__(self,other)
+ /                                               object.__truediv__(self,other)
+ //                                              object.__floordiv__(self,other)
+ %                                               object.__mod__(self,other)
+ **                                              object.__pow__(self,other)
+ >>						 object.__rshift__(self,other)
+ <<						 object.__lshift__(self,other)
+ &					         object.__and__(self,other)
+ |						 object.__or__(self,other)
+ ^						 object.__xor__(self,other)
+
+Assignment Operators
+
+-=						object.__isub__(self,other)
++=						object.__iadd__(self,other)
+*=						object.__imul__(self,other)
+/=						object.__idiv__(self,other)
+//=						object.__ifloordiv__(self,other)
+%=						object.__imod__(self,other)
+**=						object.__ipow__(self,other)		
+>>=						object.__irshift__(self,other)
+<<=						object.__ilshift__(self,other)
+&=						object.__iand__(self,other)
+|=						object.__ior__(self,other)
+^=						object.__ixor__(self,other)
+ Comparison 
+
+OPERATION OVERLOADING:
+* Operation overloading means giving extended meaning beyond their predefined operational meaning
+* For example: A+ operator is used to add the numeric values as well as to concatenate the strings. That's because + is overloaded for int class and str class.
+* But we can give extra meaning to this + operator and use it with our own defined class. this method of giving extra meaning to the operators is called opration overloading.
+* Operator overloading is a form of compile-time polymorphism.
+* When we use operators, a special function or magic function is automatically invoked that is associated with that particular operator. For example: when we use + operator the magic method __add__ is automatically invoked in which the operation for + operator is defined.
+* So by changing this magic method's code we can give extra meaning to the + operator.

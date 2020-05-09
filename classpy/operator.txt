@@ -1,0 +1,8 @@
+operators:
+1. arithmetic operator
+2. comparison
+3. assignment
+4. logical
+5. bitwise
+6. membership
+7. identity
